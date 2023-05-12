@@ -50,7 +50,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{ #2 \vspace{-2pt}}
   }
 }
 
@@ -68,6 +68,12 @@
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\sub}[2]{%
+\par\noindent\begin{tabular*}{0.97\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
+\textit{\small #1} & \textit{\small #2} \
+\end{tabular*}\par\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -93,8 +99,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : \href{tel:+11234567890}{+1-123-456-7890} \\
+  \textbf{\href{marwahoualla.com}{\Large Marwa Houalla}} &\href{mailto:mhoualla@umich.edu}{mhoualla@umich.edu}\\
+  \href{http://mhoualla.com/}{http://www.mhoualla.com} &\href{}{Washington DC-Baltimore Metropolitan Area} \\
 \end{tabular*}
 
 
@@ -102,11 +108,9 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
-    \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
+      {University of Michigan}{Ann Arbor, Michigan}
+      {Honors Bachelor of Science in Computer Science;  GPA: 3.9}{Sep 2020 - Dec 2023}
+      \sub{Relevant Coursework: Advanced Operating Systems, Web Systems, UI/UX Design, Compiler Construction}{}
   \resumeSubHeadingListEnd
 
 
@@ -115,15 +119,9 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 - Present}
-      \resumeItemListStart
-        \resumeItem{Tensorflow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-      \resumeItemListEnd
-      
+      {Wayfair}{Boston, MA}
+      {Incoming Software Development Engineer Intern}{June 2023 - Present }
+
 % --------Multiple Positions Heading------------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -135,48 +133,33 @@
 %-------------------------------------------
 
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 - Oct 2016}
+      {University of Michigan EECS}{Ann Arbor, MI}
+      {Teaching Assistant for Data Structures \& Algorithms}{Dec 2021 - Present}
       \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowd sourcing platform which allowed for creating various tasks for crowd sourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on docker and AWS, standardized the python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Using this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+        \resumeItem{}{Help professors teach 900+ students per semester algorithm analysis, O-notation, fundamental data structures (stacks, queues, deques and hash tables), and algorithm techniques (dynamic programming, greedy, recursive, divide-and-conquer, branch-and-bound, and backtracking). }
+        \resumeItem{}{Lead a weekly lab section, ideate and write exam questions, answer conceptual questions on Piazza.}
+        \resumeItem{}{Hold weekly office hours for debugging and optimizing projects containing more than 1000 lines of code.}
+        \resumeItemListEnd
+      \sub{Grader for Introduction to Computer Architecture}{Sep 2022 - Present}
+      \resumeItemListStart
+      \resumeItem{}{Grade assignments and exams on computer organization topics, such as caches, virtual memory, multi- and single-cycle datapaths, pipelining, and information set architecture.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
+      {T. Rowe Price}{New York, NY}
+      {Software Engineer Intern}{June 2022 - Sep 2022}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
+      \resumeItem{}{Built Grafana dashboards with proper metrics using Prometheus, Telegraf, Splunk, and Cloudwatch for the Enterprise HashiCorp Vault application.}
+      \resumeItem{}{Implemented an alerting system with Alertmanager to proactively be notified of Vault incidents.}
+      \resumeItem{}{Integrated Sourcegraph code intelligence into the Gitlab UI using Docker.}
+      \resumeItem{}{Collected firmwide VDI information using Prometheus and broke it out by geolocation to better understand update and consumption patterns.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant - Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
-        \resumeItem{Teaching Assistant - Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-      \resumeItemListEnd
+    \resumeSubheading{Ford School of Public Policy}{Ann Arbor, MI}{Researcher}{Sep 2020 - Present}
+    \resumeItemListStart
+    \resumeItem{}{Experimental research on hiring discrimination under the supervision of Professor Fabiana Silva.}
+    \resumeItem{}{Assist in designing and testing experimental stimuli, edit manuscripts, code MTurk survey responses, and conduct several literature reviews.}
+    \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -184,14 +167,13 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+    \resumeSubItem{Thread Library (C++17):}
+      {Implemented sophisticated Thread Library to handle the creation, execution, and lifespan of multiple thread bodies on a multi-core architecture, equipped with advanced functionalities such as conditional variables, mutexes, generic threads, inner process interrupt capabilities, and thread lifetime management operations including yield and join.}
+    \resumeSubItem{Virtual Memory Manager (C++17):}
+      {Designed and implemented virtual memory manager that supports file- and swap-backed pages, maintaining processes' address spaces via the pager interface, enabling syscalls, forking of child processes with non-empty virtual arena, and creating customizable memory sizes with a clock queue to control eviction orders and enable bits for read, write permissions and physical page residency.}
+    \resumeSubItem{LinkedIn Data Scraper and Classification Tool (Python 3):}{Created suite of scripts to extract recommendation data from LinkedIn profiles, facilitating in-depth textual analysis of the collected data using a Naive Bayes classifier and the Scikit-learn Python framework. Analyzed gender-associated words as part of an Honors Thesis, achieving the highest ranking for this project.}
+    \resumeSubItem{Network Fileserver (C++17)}
+      {Designed and implemented a multi-threaded network file server with fine-grained locking, socket programming, client-server systems, and network protocols.}
   \resumeSubHeadingListEnd
 
 %
@@ -207,4 +189,11 @@
 
 
 %-------------------------------------------
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+      \textbf{Languages}{: C++, C, Rust, Python, Javascript, HTML, CSS, GDB} \break
+      \textbf{Technologies}{: AWS, React, Grafana, Figma} \break
+      \textbf{OS}{: Arch Linux, MacOS, Windows}
+
 \end{document}
